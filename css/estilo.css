@@ -1,0 +1,41 @@
+*{margin: 0;
+  padding: 0;
+}
+
+body{ background-color: blue;
+    font-family: 'Inconsolata', monospace;
+}
+
+header{ background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 4rem;
+
+}
+
+nav{ background-color: brown;
+}
+
+.listamenu{ display: flex;
+    list-style: none;
+}
+
+li{ margin-right: 2rem;
+}
+
+.logomc{ width: 3rem;
+}
+
+.logolinkedin{ width: 1.5rem;
+}
+
+.logogithub{ width: 1.5rem;
+}
+
+.boton_contactame{ cursor: pointer;
+    border-radius: 0.2rem;
+    background: transparent;
+    border: #d76627;
+}
