@@ -4,6 +4,10 @@
 
 body{ background-color: blue;
     font-family: 'Inconsolata', monospace;
+    color: white
+}
+
+h2{ text-align: center;
 }
 
 header{ background-color: bisque;
@@ -38,4 +42,80 @@ li{ margin-right: 2rem;
     border-radius: 0.2rem;
     background: transparent;
     border: #d76627;
+}
+
+/*HERO*/
+
+.hero{ background-color: #d76627;
+display: flex;
+width: 100vw;
+height: 90vh;
+justify-content: space-evenly;
+}
+
+.textohero{ background-color: black;
+    line-height: 1.5;
+    padding-top: 15rem;
+
+}
+
+.linea_uno{ font-size: 2.5rem;
+}
+
+.linea_dos{ font-size: 3rem;
+
+}
+
+.linea_tres{ font-size: 2.5rem;
+    
+}
+
+.imgprincipal{ max-height: 90vh;
+
+}
+
+/*INFORMACION*/
+
+.informacion{ background-color: blueviolet;
+    padding: 5rem;
+}
+
+.contenedordivs_info{ background-color: greenyellow;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.divinfo_uno{ background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid #61DAFB;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.divinfo_dos{ background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border: 0.2rem solid #d76627;
+    border-radius: 1rem;
+    padding: 1rem;
+    transform: scale(120%);
+}
+
+.divinfo_tres{ background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid #61DAFB;
+    border-radius: 1rem;
+    padding: 1rem;
 }
