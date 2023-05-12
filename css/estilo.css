@@ -8,6 +8,8 @@ body{ background-color: blue;
 }
 
 h2{ text-align: center;
+    padding-bottom: 2rem;
+    font-size: xx-large;
 }
 
 header{ background-color: bisque;
@@ -77,7 +79,7 @@ justify-content: space-evenly;
 /*INFORMACION*/
 
 .informacion{ background-color: blueviolet;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .contenedordivs_info{ background-color: greenyellow;
@@ -85,6 +87,7 @@ justify-content: space-evenly;
     padding-bottom: 3rem;
     display: flex;
     justify-content: center;
+    font-size: x-large;
 }
 
 .divinfo_uno{ background-color: darkolivegreen;
@@ -94,7 +97,10 @@ justify-content: space-evenly;
     align-items: center;
     border: 0.2rem solid #61DAFB;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
 }
 
 .divinfo_dos{ background-color: goldenrod;
@@ -106,8 +112,11 @@ justify-content: space-evenly;
     margin-right: 3rem;
     border: 0.2rem solid #d76627;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     transform: scale(120%);
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
 }
 
 .divinfo_tres{ background-color: hotpink;
@@ -117,5 +126,37 @@ justify-content: space-evenly;
     align-items: center;
     border: 0.2rem solid #61DAFB;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
 }
+
+.contenedordivs_info img{
+    max-width: 65%;
+    max-height: 65%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*HABILIDADES*/
+
+.habilidades{
+    background-color: darkmagenta;
+    padding: 3rem;
+}
+
+.contenedorimg_habilidades{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorimg_habilidades img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: -40%;
+}
+
