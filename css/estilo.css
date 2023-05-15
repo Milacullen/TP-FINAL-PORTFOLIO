@@ -17,7 +17,7 @@ header{ display: flex;
     justify-content: space-around;
     width: 100%;
     height: 4rem;
-    padding: 2rem;
+    padding: 1rem;
     font-size: large;
 }
 
@@ -73,32 +73,42 @@ li{ margin-right: 2rem;
 
 /*HERO*/
 
-.hero{ background-color: #d76627;
-display: flex;
+.hero{ display: flex;
 width: 100vw;
 height: 90vh;
 justify-content: space-evenly;
 }
 
-.textohero{ background-color: black;
-    line-height: 1.5;
+.textohero{ line-height: 4rem;
+    margin-left: 3rem;
     padding-top: 15rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .linea_uno{ font-size: 2.5rem;
 }
 
-.linea_dos{ font-size: 3rem;
-
-}
-
 .linea_tres{ font-size: 2.5rem;
-    
 }
 
 .imgprincipal{ max-height: 90vh;
-
 }
+
+.naranja{
+    color: #d76627;
+    font-size: 5rem;
+}
+
+.cyan{
+    color: #61DAFB;
+    font-size: 4rem;
+ 
+}
+
+.imgprincipal{
+    filter: drop-shadow(0 0 50px #d76627);
+  }
 
 /*INFORMACION*/
 
