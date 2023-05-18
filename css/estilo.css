@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{margin: 0;
   padding: 0;
 }
@@ -20,10 +24,13 @@ h2{ text-align: center;
     color: #61DAFB;
 }
 
+.blanco{
+    color: white;
+}
+
 header{ display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
     height: 4rem;
     padding: 1rem;
     font-size: large;
@@ -132,6 +139,7 @@ border-bottom: 0.2rem solid #d76627;
     box-sizing: border-box;
     width: 300px;
     height: 300px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .divinfo_dos{ display: flex;
@@ -159,7 +167,16 @@ border-bottom: 0.2rem solid #d76627;
     box-sizing: border-box;
     width: 300px;
     height: 300px;
+    transition: transform 0.2s ease-in-out;
 }
+
+.divinfo_uno:hover {
+    transform: scale(1.1);
+  }
+
+.divinfo_tres:hover {
+    transform: scale(1.1);
+  }
 
 .contenedordivs_info img{
     max-width: 65%;
@@ -172,7 +189,7 @@ border-bottom: 0.2rem solid #d76627;
 
 /*HABILIDADES*/
 
-.habilidades{padding: 2rem;   
+.habilidades{ padding: 2rem;   
 }
 
 .contenedorimg_habilidades{ padding-top: 3rem;
@@ -182,18 +199,18 @@ border-bottom: 0.2rem solid #d76627;
 }
 
 .contenedorimg_habilidades img {
-   width: 15rem;
-   height: 15rem;
+   width: 9rem;
+   height: 9rem;
 }
 
 .html_logo{
-    background-color: #2d303d;
+    background-color: #24283a;
     border-radius: 2rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .logocss{
-    background-color: #2d303d;
+    background-color: #24283a;
     border-radius: 2rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
     margin-left: 2rem;
@@ -201,61 +218,240 @@ border-bottom: 0.2rem solid #d76627;
 }
 
 .logojs{
-    background-color: #2d303d;
+    background-color: #24283a;
     border-radius: 2rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-
 /*EXPERIENCIA*/
 
-.experiencia{
-    background-color: olive;
-    padding: 3rem;
+.timeline_items {
+    position: relative;
+  }
+  
+  .timeline_items::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #d76627;
+    transform: translateX(-50%);
+  }
+  
+  .timeline_itemuno,
+  .timeline_itemdos,
+  .timeline_itemtres {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .timeline_itemuno::before,
+  .timeline_itemdos::before,
+  .timeline_itemtres::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d76627; 
+    transform: translate(-50%, -50%);
+  }
+
+.experiencia{padding: 4rem;
 }
 
-.experiencia_uno{
-    margin-left: 53rem;
-    padding: 4rem;
+.timeline_date {
+    margin: 3rem 0rem 1rem;
+    background-color: #d76627;
+    width: fit-content;
 }
 
-.experiencia_dos{
-    margin-left: 17rem;
-    padding: 4rem;
-}
-
-.experiencia_tres{
-    margin-left: 53rem;
-    padding: 4rem;
+.timeline_contenido {
+    font-size: larger;
+    display: inline-block;
+    line-height: 1.5rem;
 }
   
+.timeline_itemuno{
+    padding-left: calc(55% + 30px)
+}
+
+.timeline_itemdos{
+    padding-left: calc(20% + 30px)
+}
+
+.timeline_itemtres{
+    padding-left: calc(55% + 30px)
+}
+
+h4{
+    color: #61DAFB;
+}
+
+ul{
+    margin-left: 1rem;
+    font-size: medium;
+}
+
+.texto_experiencias{
+    line-height: 3.1rem;
+    font-size: medium;
+}
+
 /*WORK TOGETHER*/
 
 .worktogether{
-    background-color: salmon;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .titulo_grande{
     text-transform: uppercase;
     font-size: 3rem;
+    color: #d76627;
 }
 
-.formulario{
-    background-color: beige;
+input{ background-color: #111320;
+    border: none;
+    border-radius: 0;
+    color: white;
+    margin-bottom: 3rem;
+    font-size: medium;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: underline;
+    text-decoration-color: #61DAFB;
+}
+
+.formulario{ padding-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+textarea{ background-color: #111320;
+    color: white;
+    font-size: large;
+    width: 20rem;
+    height: 10rem;
+    border: 0.1rem solid #61DAFB;
+    border-radius: 0.2rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+.boton_enviar{ background-color: #d76627;
+    margin-top: 1.5rem;
+    margin-left: 15rem;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 1px;
+    text-decoration: none;
+}
+
+.boton_enviar:hover{
+cursor: pointer;
 }
 
 /*FOOTER*/
 
-footer{
-    padding: 3rem;
+footer{ padding-top: 3rem;
+    color: #d76627; 
 }
 
-.contenedorimg_footer{
-    display: flex;
+.contenedorimg_footer{ display: flex;
     justify-content: center;
 }
 
+.loguitos{ width: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.irainicio{ padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: #d76627;
+    display: flex;
+    justify-content: right;
+    margin-right: 5rem;
+}
+
+.background-container{
+    background-image: url("../img/circulos.png");
+    background-repeat: repeat-x;
+    background-size: 130%;
+    background-position-x: 50rem;
+    background-position-y: -9rem;
+}
+
+/*MEDIAQ*/
+
+@media (max-width:767px){
+    .hero{
+        width: 100vw;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgprincipal{
+        max-height: 59vh;
+        margin: 0;
+    }
+
+    .linea_uno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linea_dos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linea_tres{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textohero{
+        padding-top: 0rem;
+       
+    }
+    .contenedordivs_info{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .divinfo_dos{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .timeline_items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline_itemuno{
+        padding-left: 0%;
+    }
+    .timeline_itemdos{
+        padding-left: 0%;
+    }
+    .timeline_itemtres{
+        padding-left: 0%;
+    }
+
+    .timeline_items::after {
+        align-items: left;
+}
+    
