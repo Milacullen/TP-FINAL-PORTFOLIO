@@ -410,6 +410,7 @@ footer{ padding-top: 3rem;
         align-items: center;
     }
 
+
     .imgprincipal{
         max-height: 59vh;
         margin: 0;
@@ -431,12 +432,10 @@ footer{ padding-top: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: x-large;
     }
 
-    .textohero{
-        padding-top: 0rem;
-       
-    }
+        
     .contenedordivs_info{
         flex-direction: column;
         align-items: center;
@@ -481,5 +480,15 @@ footer{ padding-top: 3rem;
     .miclase{
         display: flex;
     }
+
+    .contenedorimg_habilidades{
+        flex-wrap: wrap;
+    }
+
+   
+      
+    
+
+
 
 }    
