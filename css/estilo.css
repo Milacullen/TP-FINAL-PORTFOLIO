@@ -34,6 +34,9 @@ header{ display: flex;
     height: 4rem;
     padding: 1rem;
     font-size: large;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .imagenes_derecha{
@@ -91,6 +94,10 @@ li{ margin-right: 2rem;
   }
 
 /*HERO*/
+
+main{
+    padding-top: 10%;
+}
 
 .hero{ display: flex;
 width: 100vw;
@@ -394,6 +401,7 @@ footer{ padding-top: 3rem;
 /*MEDIAQ*/
 
 @media (max-width:767px){
+
     nav{
         display: none;
     }
@@ -408,12 +416,17 @@ footer{ padding-top: 3rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border-bottom: none;
+        padding-top: 10%;
     }
 
+    .textohero{
+        padding: 0%;
+    }
 
     .imgprincipal{
-        max-height: 59vh;
-        margin: 0;
+        max-width: 100%;
+        margin-right: 0%;
     }
 
     .linea_uno{
@@ -423,6 +436,7 @@ footer{ padding-top: 3rem;
     }
 
     .linea_dos{
+        font-size: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -444,6 +458,9 @@ footer{ padding-top: 3rem;
     .divinfo_dos{
         margin-top: 5rem;
         margin-bottom: 5rem;
+        margin-right: 0%;
+        margin-left: 0%;
+        transform: none;
     }
 
     .timeline_items{
@@ -452,7 +469,10 @@ footer{ padding-top: 3rem;
         align-items: center;
     }
 
- 
+    .logomc{
+        display: none;
+    }
+
     .timeline_itemuno,
     .timeline_itemdos,
     .timeline_itemtres {
@@ -468,7 +488,6 @@ footer{ padding-top: 3rem;
 
     .timeline_items::after {
         left: 0%;
-    
     }
 
     .background-container{
@@ -483,12 +502,19 @@ footer{ padding-top: 3rem;
 
     .contenedorimg_habilidades{
         flex-wrap: wrap;
+        
     }
 
-   
+    .worktogether{
+        padding: 0rem;
+    }
       
-    
+    .boton_enviar{
+        margin-left: 2%;
+    }
 
-
+    .header{
+        width: 100%;
+    }
 
 }    
