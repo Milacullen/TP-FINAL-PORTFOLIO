@@ -498,6 +498,14 @@ footer{ padding-top: 3rem;
 
     .miclase{
         display: flex;
+        align-items: center;
+        margin-right: 5%;
+
+    }
+
+    header{
+        padding: 0%;
+        justify-content: right;
     }
 
     .contenedorimg_habilidades{
@@ -513,8 +521,6 @@ footer{ padding-top: 3rem;
         margin-left: 2%;
     }
 
-    .header{
-        width: 100%;
-    }
+   
 
 }    
